@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "mcp-workshop": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "-m",
+        "mcp_workshop.server",
+        "--transport",
+        "stdio"
+      ]
+    }
+  }
+}
