@@ -42,9 +42,11 @@ editor is in the middle, and the terminal is at the bottom.
 1. Find the Copilot icon near the top of VS Code.
 2. Select it to open **Copilot Chat**.
 3. If asked to sign in, sign in with your GitHub account.
-4. Type this into the chat box and press <kbd>Enter</kbd>:
+4. Type this prompt into the chat box and press <kbd>Enter</kbd>:
 
-   > Say hello in one short sentence.
+   ```text
+   Say hello in one short sentence.
+   ```
 
 If Copilot replies, it is ready.
 
@@ -56,16 +58,20 @@ This project is already configured to connect the server to Copilot.
    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, type
    `Developer: Reload Window`, and press <kbd>Enter</kbd>.
 2. Open Copilot Chat again.
-3. Enter:
+3. Type this prompt:
 
-   > Use the hello_world tool from mcp-workshop.
+   ```text
+   Use the hello_world tool from mcp-workshop.
+   ```
 
 4. Copilot may ask for permission to use the tool. Select **Allow** or
    **Continue**.
 5. You should see `Hello, world!`.
-6. Now enter:
+6. Now type this prompt:
 
-   > Use the add_numbers tool from mcp-workshop to add 7 and 5.
+   ```text
+   Use the add_numbers tool from mcp-workshop to add 7 and 5.
+   ```
 
 You should get `12`.
 
@@ -98,9 +104,11 @@ What each line means:
 
 1. Reload VS Code again using `Developer: Reload Window`.
 2. Open Copilot Chat.
-3. Enter:
+3. Type this prompt:
 
-   > Use the favourite_colour tool from mcp-workshop. My name is Alex.
+   ```text
+   Use the favourite_colour tool from mcp-workshop. My name is Alex.
+   ```
 
 4. Allow the tool if Copilot asks for permission.
 
