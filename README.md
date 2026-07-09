@@ -138,6 +138,12 @@ If `copilot` is not available, rebuild the container or run:
 bash .devcontainer/setup.sh
 ```
 
+If you only need to retry the Copilot CLI install, run:
+
+```bash
+npm install -g @github/copilot
+```
+
 ## Prompts to try in Copilot
 
 After connecting the server, open Copilot Chat in VS Code and try prompts like:
