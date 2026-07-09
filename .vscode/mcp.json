@@ -5,9 +5,7 @@
       "command": "${workspaceFolder}/.venv/bin/python",
       "args": [
         "-m",
-        "mcp_workshop.server",
-        "--transport",
-        "stdio"
+        "mcp_workshop.server"
       ]
     }
   }
