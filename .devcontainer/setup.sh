@@ -28,4 +28,18 @@ else
   echo "GitHub CLI was not found, so gh copilot setup was skipped."
 fi
 
+echo "Creating a copilot command that runs gh copilot..."
+sudo tee /usr/local/bin/copilot >/dev/null <<'EOF'
+#!/usr/bin/env bash
+set -euo pipefail
+
+if ! command -v gh >/dev/null 2>&1; then
+  echo "GitHub CLI is required to run Copilot from the terminal." >&2
+  exit 127
+fi
+
+exec gh copilot "$@"
+EOF
+sudo chmod +x /usr/local/bin/copilot
+
 echo "Devcontainer setup complete."

@@ -126,6 +126,18 @@ If Inspector shows a CORS error, stop any old `mcp-workshop --http` terminal wit
 
 If you are using Codespaces, the devcontainer should install the project dependencies and helper tools automatically. It also forwards port `8000` for HTTP mode. After the Codespace finishes setting up, you can run the server, use MCP Inspector, or connect Copilot using the same commands and MCP config above.
 
+The devcontainer creates a `copilot` command that runs `gh copilot`. If `copilot` is not available, rebuild the container or run:
+
+```bash
+bash .devcontainer/setup.sh
+```
+
+On first use, `gh copilot` may ask to install GitHub Copilot CLI. Answer `Y` when prompted. If the install was skipped because GitHub authentication was not ready, run:
+
+```bash
+gh extension install github/gh-copilot
+```
+
 ## Prompts to try in Copilot
 
 After connecting the server, open Copilot Chat in VS Code and try prompts like:
